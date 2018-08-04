@@ -1,0 +1,512 @@
+<<<<<<< HEAD:daisy.css
+/* mobile */
+
+@media (min-width: 400px) {
+  #bg-vid {
+    margin-bottom: -10px;
+  }
+  #title-text {
+    font-size: 50px;
+    top: 65px;
+    left: 50px;
+  }
+=======
+body {
+  background-color: whitesmoke;
+}
+
+@font-face {
+  font-family: jpFont;
+  src: url(NotoSansCJK/NotoSansCJKjp-Regular.otf);
+}
+
+@font-face {
+  font-family: enFont;
+  src: url(NotoSans/NotoSans-Regular.ttf);
+}
+
+.english {
+  font-family: enFont;
+>>>>>>> wp:bindex.css
+}
+
+.japanese {
+  font-family: jpFont;
+}
+
+/* title style */
+
+#en-jp {
+  float: right;
+  top: 40px;
+  right: 20px;
+  z-index: 1;
+  position: relative;
+  font-size: 18px;
+}
+#en-jp:hover {
+
+cursor: pointer;
+
+}
+
+#bg-vid {
+  width: 100%;
+  z-index: 0;
+  position: relative;
+}
+
+<<<<<<< HEAD:daisy.css
+* {
+  font-family: helvetica;
+=======
+#title-text {
+  z-index: 1;
+  position: absolute;
+  color: #ffc125;
+>>>>>>> wp:bindex.css
+}
+
+#hakone {
+  font-size: 125px;
+}
+
+#projekkto {
+  font-size: 75px;
+}
+
+#introductions:hover {
+  background-color: whitesmoke;
+}
+
+#experiments:hover {
+  background-color: whitesmoke;
+}
+
+#ramblings:hover {
+  background-color: whitesmoke;
+}
+
+/* label style */
+
+#introductions {
+  background-color: #909090;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 60px;
+}
+
+/* introduction style */
+
+#intro-image {
+  text-align: center;
+}
+
+#oni {
+  margin: 80px;
+  max-width: 80%;
+}
+
+#intro-description {
+  text-align: center;
+}
+
+.submit {
+  border-radius: 8px;
+}
+
+.submit:hover {
+  background-color: #ffc125;
+}
+
+#intro a {
+  color: black;
+}
+
+#intro a:hover {
+  color: #ffc125;
+}
+
+#message {
+  background-color: whitesmoke;
+}
+
+/* label style */
+
+#experiments {
+  background-color: #606060;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 60px;
+}
+
+/* pipCam style */
+
+#exp-1-pipcam-description {
+  padding: 50px;
+  padding-top: 130px;
+}
+
+#pipcam-image {
+  padding: 50px;
+    width: 100%;
+}
+
+/* Heisig style */
+
+#exp-2-heisig-description {
+  padding: 50px;
+  padding-top: 90px;
+}
+
+#heisig-image {
+  padding: 50px;
+    width: 100%;
+}
+
+/* label style */
+
+#ramblings {
+  background-color: #505050;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 60px;
+}
+/* Booksale stye */
+
+#booksale-description {
+  padding-top: 130px;
+  text-align: center;
+}
+
+#booksale-image {
+  padding-top: 30px;
+  padding-right: 40px;
+  width: 100%;
+
+}
+
+
+/* Octo style */
+
+#ram-1-octo {
+  padding-top: 30px;
+}
+
+#ram-1-octo-description {
+  padding-top: 80px;
+  text-align: center;
+}
+
+#ram-1-octo-slideshow {}
+
+.maru {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .maru:hover {
+  background-color: #717171;
+}
+
+/* Gala stye */
+
+#gala-description {
+  padding-top: 110px;
+  text-align: center;
+}
+
+#gala-image {
+  padding-top: 30px;
+  padding-right: 40px;
+  width: 100%;
+}
+
+/* Fuji style */
+
+#ram-1-fuji {
+  padding-top: 30px;
+}
+
+#ram-1-fuji-description {
+  padding-top: 80px;
+  text-align: center;
+}
+
+#ram-1-fuji-slideshow {}
+
+.ball {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .ball:hover {
+  background-color: #717171;
+}
+
+/* instax stye */
+
+#instax-description {
+  padding-top: 110px;
+  text-align: center;
+}
+
+#instax-image {
+  padding-top: 30px;
+  padding-right: 40px;
+  width: 100%;
+}
+
+/* sumo style */
+
+#ram-1-sumo {
+  text-align: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#sumo-img {
+  width: 100%;
+}
+
+#sumo-description {
+  padding-top: 40px;
+  padding-right: 60px;
+}
+
+/* udon style */
+
+#ram-1-udon li {
+  text-align: center;
+}
+
+#ram-1-udon-title {
+  text-align: left;
+  text-indent: 80px;
+}
+
+/* The dots/bullets/indicators */
+
+.circle {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .circle:hover {
+  background-color: #717171;
+}
+
+#ram-1-udon li {
+  list-style: none;
+}
+
+#ram-1-udon-slideshow {
+  padding: 40px;
+}
+
+/* Kisyu style */
+
+#ram-1-kisyuu {
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+}
+
+#kisyuu-img-1 {
+  width: 100%;
+}
+
+/* Muji style */
+
+#ram-1-muji-slideshow {
+  padding: 55px;
+}
+
+#ram-1-muji-title {
+  text-align: left;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#ram-1-muji p {
+  text-align: center;
+  padding-left: 70px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Murakami style */
+
+#ram-1-murakami-description {
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+#ram-1-murakami h3 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#ram-1-murakami img {
+  width: 100%;
+  padding-top: 30px;
+}
+
+#ram-1-murakami ol {
+  padding-left: 80px;
+}
+
+/* What I use to study Japanese style */
+
+#ram-1-wiutsj-description {
+  padding-top: 60px;
+  padding-left: 40px;
+}
+
+#ram-1-wiutsj-slidehow {
+  padding: 40px;
+}
+
+.round {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .round:hover {
+  background-color: #717171;
+}
+
+/* talisman style */
+
+#ram-1-talisman-description {
+  padding: 100px;
+}
+
+#ram-1-talisman-image {
+  width: 100%;
+}
+
+/* cup Noodle style */
+
+#ram-1-cupnoodle-description {
+  padding-top: 100px;
+  padding-right: 120px;
+  text-align: center;
+}
+
+#ram-1-cupnoodle-image {
+  width: 100%;
+  padding-right: 30px;
+}
+
+/* constant slideshow styling */
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  color: blue;
+}
+
+.next {
+  right: 0;
+}
+
+/* up navigation */
+
+#up-nav {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+}
+
+/* mobile */
+
+@media (min-width: 400px) {
+  #bg-vid {
+    margin-bottom: -10px;
+  }
+  #title-text {
+    font-size: 50px;
+    top: 65px;
+    left: 50px;
+  }
+}
+
+/* tablet */
+
+@media (min-width: 680px) {
+  #bg-vid {
+    margin-top: -150px;
+    margin-bottom: -10px;
+  }
+  #title-text {
+    font-size: 70px;
+    top: 80px;
+    left: 160px;
+  }
+  #intro-description {
+    padding-top: 50px;
+    padding-right: 80px;
+  }
+}
+
+/* desktop */
+
+@media (min-width: 970px) {
+  #bg-vid {
+    margin-top: -250px;
+    margin-bottom: -10px;
+  }
+  #title-text {
+    font-size: 90px;
+    top: 150px;
+    left: 250px;
+  }
+  #intro-description {
+    padding-top: 80px;
+    padding-right: 150px;
+  }
+}
