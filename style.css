@@ -1,16 +1,7 @@
-<<<<<<< HEAD:daisy.css
-/* mobile */
+* {
+  font-family: helvetica;
+}
 
-@media (min-width: 400px) {
-  #bg-vid {
-    margin-bottom: -10px;
-  }
-  #title-text {
-    font-size: 50px;
-    top: 65px;
-    left: 50px;
-  }
-=======
 body {
   background-color: whitesmoke;
 }
@@ -27,7 +18,6 @@ body {
 
 .english {
   font-family: enFont;
->>>>>>> wp:bindex.css
 }
 
 .japanese {
@@ -44,10 +34,9 @@ body {
   position: relative;
   font-size: 18px;
 }
+
 #en-jp:hover {
-
-cursor: pointer;
-
+  cursor: pointer;
 }
 
 #bg-vid {
@@ -56,15 +45,10 @@ cursor: pointer;
   position: relative;
 }
 
-<<<<<<< HEAD:daisy.css
-* {
-  font-family: helvetica;
-=======
 #title-text {
   z-index: 1;
   position: absolute;
   color: #ffc125;
->>>>>>> wp:bindex.css
 }
 
 #hakone {
@@ -149,7 +133,7 @@ cursor: pointer;
 
 #pipcam-image {
   padding: 50px;
-    width: 100%;
+  width: 100%;
 }
 
 /* Heisig style */
@@ -161,7 +145,7 @@ cursor: pointer;
 
 #heisig-image {
   padding: 50px;
-    width: 100%;
+  width: 100%;
 }
 
 /* label style */
@@ -172,6 +156,7 @@ cursor: pointer;
   padding-top: 10px;
   padding-left: 60px;
 }
+
 /* Booksale stye */
 
 #booksale-description {
@@ -183,9 +168,7 @@ cursor: pointer;
   padding-top: 30px;
   padding-right: 40px;
   width: 100%;
-
 }
-
 
 /* Octo style */
 
