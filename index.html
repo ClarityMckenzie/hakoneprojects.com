@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
-<meta name="description" content="Hakone Projects">
+<meta name="description" content="Hakone Projects, a work in progress.">
 <meta name="author" content="Claire Mckenzie">
-<meta name="A work in progress" <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="og:image" content="/media/hp-spash.png" />
-<meta name="twitter:image" content="/media/hp-spash.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Hakone Projects">
+<meta property="og:description" content="A work in progress." />
+<meta name="og:image" content="https://hakoneprojects.com/media/hp-spash.png" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" value="Hakone Projects" />
+<meta name="twitter:description" value="A work in progress." <meta name="twitter:image" content="https://hakoneprojects.com/media/hp-spash.png" />
 
 <title>Hakone Projects</title>
 
@@ -17,7 +24,7 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
 </script>
-
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
 </head>
 
 <body>
@@ -95,10 +102,8 @@
 
 <!-- first experiment, pipCam project -->
 
-    <div class="row">
-
-      <div class="col-xs-12 col-sm-6 col-md-6" id="exp-1-pipcam-description">
-
+  <div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-6" id="exp-1-pipcam-description">
 
 <h3 class="english"> #1 </h3>
     <h3 class="japanese"> #1 </h3>
@@ -108,19 +113,15 @@
 
     </p>
     <p class="japanese">
-
       NodeJSとPythonでRaspberryPi用の猫用のカメラのSlackインテグレーションを作成しつくりました。プロジェクトの詳細はこちら: <a href="https://github.com/ClarityMckenzie/pipCam/blob/master/README.md" target="_blank">GitHub REAME</a>
-
     </p>
 
   </div>
-
   <div class="col-xs-12 col-sm-6 col-md-6" id="ram-1-pipam-image">
 
     <img src="media/pipcam.jpg" alt="pipCam for Raspberry Pi" id="pipcam-image">
 
   </div>
-
   </div>
   <hr>
   <!-- second experiment, heisig app -->
@@ -128,37 +129,26 @@
   <div class="row">
 
     <div class="col-xs-12 col-sm-6 col-md-6" id="exp-2-heisig-image">
-
       <img src="media/heisig.png" alt="Heisig app responses" id="heisig-image">
-
     </div>
-
     <div class="col-xs-12 col-sm-6 col-md-6" id="exp-2-heisig-description">
-
 
       <h3 class="english"> #2 </h3>
       <h3 class="japanese"> #2 </h3>
 
-
       <p class="english">
         I built a Slack app to search for Heisig kanji by index, character, or keyword. You can install it here:
       </p>
-      <a class="english" href="https://slack.com/oauth/authorize?scope=commands&client_id=55111770928.375687862166"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
-
+      <a class="english" href="https://slack.com/oauth/authorize?client_id=55111770928.437023950327&scope=commands"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
 
       <p class="japanese">
-
         インデックス番号、か漢字またはかキーワードでHeisigの漢字詳細を探すために、Slack用のアプリケーションを作りました。こちらでこにインストールすることができます:
-
       </p>
-      <a class="japanese" href="https://slack.com/oauth/authorize?scope=commands&client_id=55111770928.375687862166"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
-
-
+      <a class="japanese" href="https://slack.com/oauth/authorize?client_id=55111770928.437023950327&scope=commands"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
 
     </div>
 
   </div>
-
   </div>
 
   <div id="ramblings">
@@ -167,6 +157,47 @@
 
   </div>
   <div class="container-fluid" id="ram-1">
+
+
+
+
+
+
+
+
+    <!-- ONSEN EGG RECIPE -->
+
+    <div class="container-fluid" id="ram-1-onsen">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <img src="media/eggs.jpg" alt="Egg preparation station." id="onsen-image">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6" id="onsen-description">
+          <h3 id="ram-1-onsen-title" class="english"> Onsen Egg Recipe </h3>
+          <h3 id="ram-1-onsen-title" class="japanese"> 温泉卵の作り方 </h3>
+
+          <p class="english">
+            Ingredients: eggs , soy sauce, rice vinegar, sake, sugar, salt
+</p>
+
+<ul class="english">
+<li> Boil eggs in whirlpool for 6 minutes and 50 seconds</li>
+<li> Place eggs in ice bath</li>
+<li> Marinate in fridge for hours to days </li>
+</ul>
+<p class="japanese">
+  材料: 卵, 醤油, 米酢, 酒, 砂糖, 塩
+</p>
+
+<ul class="japanese">
+<li> 6分50秒間、ジャグジーの中で卵を茹でる</li>
+<li> 茹でた卵を氷水に入れる</li>
+<li> 浸したまま、冷蔵庫で数時間から数日間冷やす</li>
+</ul>
+        </div>
+      </div>
+    </div>
+    <hr>
 
     <!-- BOOKSALE -->
 
@@ -184,10 +215,8 @@
         <div class="col-xs-12 col-sm-12 col-md-6">
           <img src="media/books.jpg" alt="A pile of books" id="booksale-image">
         </div>
-
       </div>
     </div>
-
     <hr>
 
     <!-- OCTO -->
@@ -198,7 +227,6 @@
         <div class="col-xs-12 col-sm-6 col-md-6" id="ram-1-octo-slideshow">
 
           <div id="octo-slideshow-container" class="slideshow-container">
-
             <div class="myOctos">
               <img src="media/octopus.jpg" style="width:100%">
             </div>
@@ -233,7 +261,6 @@
             村上隆の展覧会「タコが己の足を食う」。タイトルは生き残るの日本の諺から来ている。
           </p>
         </div>
-
         </div>
       </div>
       <hr>
@@ -253,7 +280,6 @@
         <div class="col-xs-12 col-sm-12 col-md-6">
           <img src="media/ice.jpg" alt="Sakura Gala nametag" id="gala-image">
         </div>
-
 
       </div>
     </div>

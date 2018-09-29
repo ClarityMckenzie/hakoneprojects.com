@@ -463,8 +463,6 @@ var config = {
   authDomain: "hakp-ef752.firebaseapp.com",
   databaseURL: "https://hakp-ef752.firebaseio.com",
   projectId: "hakp-ef752",
-  storageBucket: "hakp-ef752.appspot.com",
-  messagingSenderId: "720860637676"
 };
 
 firebase.initializeApp(config);

@@ -157,6 +157,20 @@ body {
   padding-left: 60px;
 }
 
+/* Onsen Style */
+
+#onsen-description {
+  padding-top: 100px;
+
+}
+
+#onsen-image {
+  padding-top: 30px;
+  padding-right: 40px;
+  width: 90%;
+}
+
+
 /* Booksale stye */
 
 #booksale-description {
@@ -167,7 +181,7 @@ body {
 #booksale-image {
   padding-top: 30px;
   padding-right: 40px;
-  width: 100%;
+  width: 90%;
 }
 
 /* Octo style */
