@@ -22,7 +22,6 @@ $("#jp").click(function() {
   $("#en").css("color", "grey")
 })
 
-
 $('#intro').hide();
 
 $('#exp-placeholder').hide();
