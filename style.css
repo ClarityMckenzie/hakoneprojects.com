@@ -157,10 +157,41 @@ body {
   padding-left: 60px;
 }
 
+/* mikoshi style */
+
+#ram-1-mikoshi-title {
+  padding-top: 50px;
+  text-align: left;
+  text-indent: 40px;
+}
+
+#ram-1-mikoshi-description p {
+  padding-top: 30px;
+  padding-left: 130px;
+}
+
+/* The dots/bullets/indicators */
+
+.ronde {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active, .ronde:hover {
+  background-color: #717171;
+}
+
+
+
 /* Onsen Style */
 
 #onsen-description {
-  padding-top: 100px;
+  padding-top: 50px;
 
 }
 
@@ -169,7 +200,6 @@ body {
   padding-right: 40px;
   width: 90%;
 }
-
 
 /* Booksale stye */
 
@@ -284,13 +314,15 @@ body {
 
 /* udon style */
 
-#ram-1-udon li {
-  text-align: center;
-}
 
 #ram-1-udon-title {
+  padding-top: 30px;
   text-align: left;
   text-indent: 80px;
+}
+
+#ram-1-udon-description p {
+  padding-left: 30px;
 }
 
 /* The dots/bullets/indicators */
@@ -309,13 +341,6 @@ body {
   background-color: #717171;
 }
 
-#ram-1-udon li {
-  list-style: none;
-}
-
-#ram-1-udon-slideshow {
-  padding: 40px;
-}
 
 /* Kisyu style */
 

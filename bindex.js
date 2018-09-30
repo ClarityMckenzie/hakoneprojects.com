@@ -86,6 +86,85 @@ $('#タータン').mouseleave(function() {
 
 });
 
+// Mikoshi slideshow
+
+var mikoshiIndex = 1;
+var next = $('#mikoshi-slideshow-container > .next');
+var prev = $('#mikoshi-slideshow-container > .prev');
+
+for (var i = 0; i < next.length; i++) {
+  next[i].addEventListener('click', function() {
+    plusMikoshis(1);
+  });
+}
+for (var i = 0; i < prev.length; i++) {
+  prev[i].addEventListener('click', function() {
+    plusMikoshis(-1);
+  });
+}
+var ronde1 = $('#mikoshi-ronde-container > #ronde1');
+var ronde2 = $('#mikoshki-ronde-container > #ronde2');
+var ronde3 = $('#mikoshi-ronde-container > #ronde3');
+var ronde4 = $('#mikoshi-ronde-container > #ronde4');
+var ronde5 = $('#mikoshi-ronde-container > #ronde5');
+var ronde6 = $('#mikoshi-ronde-container > #ronde6');
+var ronde7 = $('#mikoshi-ronde-container > #ronde7');
+
+ronde1.click(function() {
+  currentMikoshi(1);
+});
+
+ronde2.click(function() {
+  currentMikoshi(2);
+});
+
+ronde3.click(function() {
+  currentMikoshi(3);
+});
+
+ronde4.click(function() {
+  currentMikoshi(4);
+});
+ronde5.click(function() {
+  currentMikoshi(5);
+});
+ronde6.click(function() {
+  currentMikoshi(6);
+});
+ronde7.click(function() {
+  currentMikoshi(7);
+});
+
+showMikoshis(mikoshiIndex);
+
+function plusMikoshis(n) {
+  showMikoshis(mikoshiIndex += n);
+}
+
+function currentMikoshi(n) {
+  showMikoshis(mikoshiIndex = n);
+}
+
+function showMikoshis(n) {
+  var i;
+  var mikoshis = document.getElementsByClassName("myMikoshis");
+  var rondes = document.getElementsByClassName("ronde");
+  if (n > mikoshis.length) {
+    mikoshiIndex = 1
+  }
+  if (n < 1) {
+    mikoshiIndex = mikoshis.length
+  }
+  for (i = 0; i < mikoshis.length; i++) {
+    mikoshis[i].style.display = "none";
+  }
+  for (i = 0; i < rondes.length; i++) {
+    rondes[i].className = rondes[i].className.replace(" active", "");
+  }
+  mikoshis[mikoshiIndex - 1].style.display = "block";
+  rondes[mikoshiIndex - 1].className += " active";
+}
+
 // Octo slideshow
 
 var octoIndex = 1;
